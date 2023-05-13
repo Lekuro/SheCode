@@ -1,4 +1,3 @@
-//www.shecodes.io/learn/apis/weather
 https: function formatDate(timestamp) {
   let date = new Date(timestamp);
   let hours = date.getHours();
@@ -32,7 +31,6 @@ function formatDay(timestamp) {
 }
 
 function displayForecast(response) {
-  console.log(response.data);
   let forecast = response.data.daily;
   let forecastElement = document.querySelector("#forecast-row");
 
@@ -64,7 +62,6 @@ function displayForecast(response) {
 }
 
 function getForecast(coordinates) {
-  console.log(coordinates);
   let apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${coordinates.lat}&lon=${coordinates.lon}&appid=${apiKey}&units=metric`;
   axios.get(apiUrl).then(displayForecast).catch(showErrorForecast);
 }
@@ -74,7 +71,6 @@ function showErrorForecast(request) {
 }
 
 function displayTemperature(response) {
-  console.log(response.data);
   let temperatureElement = document.querySelector("#temperature");
   let cityElement = document.querySelector("#city");
   let descriptionElement = document.querySelector("#description");
@@ -152,5 +148,4 @@ fahrenheitLink.addEventListener("click", displayFahrenheitTemperature);
 let celsiusLink = document.querySelector("#celsius-link");
 celsiusLink.addEventListener("click", displayCelsiusTemperature);
 
-// search("New York");
 navigator.geolocation.getCurrentPosition(handlePosition);
