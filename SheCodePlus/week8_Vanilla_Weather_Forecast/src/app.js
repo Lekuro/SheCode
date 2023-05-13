@@ -22,7 +22,8 @@ function formatDate(timestamp) {
   return `${day} ${hours}:${minutes}`;
 }
 
-function displayForecast() {
+function displayForecast(response) {
+  console.log(response.data);
   let forecastElement = document.querySelector("#forecast-row");
 
   let days = ["Thu", "Fri", "Sat", "Sun"];
@@ -44,10 +45,16 @@ function displayForecast() {
       </div>`;
   });
   forecastElement.innerHTML = forecastHTML;
-  console.log(forecastHTML);
+}
+
+function getForecast(coordinates) {
+  console.log(coordinates);
+  let apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${coordinates.lat}&lon=${coordinates.lon}&appid=${apiKey}&units=metric`;
+  axios.get(apiUrl).then(displayForecast);
 }
 
 function displayTemperature(response) {
+  console.log(response.data);
   let temperatureElement = document.querySelector("#temperature");
   let cityElement = document.querySelector("#city");
   let descriptionElement = document.querySelector("#description");
@@ -69,10 +76,10 @@ function displayTemperature(response) {
     `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
   );
   iconElement.setAttribute("alt", response.data.weather[0].description);
+  getForecast(response.data.coord);
 }
 
 function search(city) {
-  let apiKey = "9eca7aac0b071aa16e3cb063adba0785";
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
   axios.get(apiUrl).then(displayTemperature);
 }
@@ -102,12 +109,13 @@ function displayCelsiusTemperature(event) {
 }
 
 function handlePosition(position) {
-  let apiKey = "9eca7aac0b071aa16e3cb063adba0785";
   let latitude = position.coords.latitude;
   let longitude = position.coords.longitude;
   let endpointUrl = `https://api.openweathermap.org/data/2.5/weather?lon=${longitude}&lat=${latitude}&&units=metric&appid=${apiKey}`;
   axios.get(endpointUrl).then(displayTemperature);
 }
+
+let apiKey = "9eca7aac0b071aa16e3cb063adba0785";
 
 let celsiusTemperature = null;
 
@@ -122,4 +130,3 @@ celsiusLink.addEventListener("click", displayCelsiusTemperature);
 
 // search("New York");
 navigator.geolocation.getCurrentPosition(handlePosition);
-displayForecast();
