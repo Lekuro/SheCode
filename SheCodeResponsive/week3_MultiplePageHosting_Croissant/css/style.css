@@ -5,6 +5,9 @@
     font-size: 1.2em;
   }
 }
+body {
+  background-color: #efe;
+}
 h1 {
   margin: 20px 0;
 }
