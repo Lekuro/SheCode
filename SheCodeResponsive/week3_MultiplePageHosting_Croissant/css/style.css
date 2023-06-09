@@ -1,0 +1,13 @@
+@media (min-width: 768px) {
+  .wrapper {
+    max-width: 900px;
+    margin: 0 auto;
+    font-size: 1.2em;
+  }
+}
+h1 {
+  margin: 20px 0;
+}
+.wrapper-top-margin {
+  margin-top: 100px;
+}
