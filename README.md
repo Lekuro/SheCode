@@ -8,3 +8,6 @@ https://gregarious-khapse-b2d778.netlify.app/
 
 SheCodeResponsive/week3_MultiplePageHosting_Croissant
 https://transcendent-phoenix-27697e.netlify.app/photo.html
+
+SheCodeResponsive/week3_Homework
+https://eloquent-douhua-e5a224.netlify.app
