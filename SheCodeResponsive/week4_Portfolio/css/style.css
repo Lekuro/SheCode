@@ -4,13 +4,16 @@
   --header-font-family: "Playfair Display", serif;
   --branding-color: #6c63ff;
   --secondary-color: #f9f7fe;
+  --text-color: #272142;
 }
 
 body {
   font-family: var(--default-font-family);
   font-weight: normal;
+  font-size: 16px;
 }
-h1 {
+h1,
+h2 {
   font-family: var(--header-font-family);
   font-weight: bold;
 }
@@ -18,14 +21,13 @@ header {
   background-color: var(--secondary-color);
   padding: 160px 0;
   text-align: center;
+  margin-bottom: 125px;
 }
 header h2 {
-  font-weight: bold;
   font-size: 36px;
   line-height: 54px;
 }
 header h1 {
-  font-weight: bold;
   font-size: 96px;
   line-height: 128px;
 }
@@ -35,6 +37,7 @@ header h3 {
   margin: 24px 0 50px;
 }
 .btn-branding {
+  border: 1px solid var(--branding-color);
   color: white;
   font-size: 18;
   padding: 18px 46px;
@@ -44,5 +47,48 @@ header h3 {
   transition: all 200ms ease-in-out;
 }
 .btn-branding:hover {
-  opacity: 0.9;
+  color: var(--branding-color);
+  background-color: var(--secondary-color);
+}
+section h3 {
+  font-family: var(--default-font-family);
+  font-size: 18px;
+  font-weight: normal;
+  text-align: center;
+  color: var(--text-color);
+}
+section h2 {
+  font-size: 64px;
+}
+section p {
+  margin: 50px 0;
+  line-height: 30px;
+  color: var(--text-color);
+}
+.btn-branding-outline {
+  color: var(--branding-color);
+  border: 1px solid var(--branding-color);
+  border-radius: 4px;
+  text-decoration: none;
+  padding: 18px 25px;
+  transition: all 200ms ease-in-out;
+}
+.btn-branding-outline:hover {
+  background-color: var(--branding-color);
+  color: white;
+}
+.project-description {
+  margin: 5vw 30px;
+}
+.row {
+  margin: 70px 0;
+}
+@media (max-width: 860px) {
+  header h1 {
+    font-size: 56px;
+    line-height: 128px;
+  }
+  section h2 {
+    font-size: 42px;
+  }
 }
