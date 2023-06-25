@@ -1,0 +1,188 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@500;700&display=swap");
+:root {
+  --default-font-family: "Poppins", sans-serif;
+  --header-font-family: "Playfair Display", serif;
+  --branding-color: #6c63ff;
+  --secondary-color: #f9f7fe;
+  --text-color: #272142;
+}
+
+body {
+  font-family: var(--default-font-family);
+  font-weight: normal;
+  font-size: 16px;
+}
+h1,
+h2 {
+  font-family: var(--header-font-family);
+  font-weight: bold;
+}
+nav {
+  padding: 20px 10px;
+  line-height: 40px;
+}
+nav img {
+  max-height: 40px;
+}
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+nav li {
+  display: inline;
+  margin-left: 15px;
+}
+nav a {
+  color: var(--text-color);
+  opacity: 0.7;
+  text-decoration: none;
+}
+nav .active {
+  opacity: 1;
+}
+nav a:hover {
+  color: var(--branding-color);
+}
+header {
+  background-color: var(--secondary-color);
+  padding: 160px 0;
+  text-align: center;
+  margin-bottom: 125px;
+}
+header h2 {
+  font-size: 36px;
+  line-height: 54px;
+}
+header h1 {
+  font-size: 96px;
+  line-height: 128px;
+}
+header h3 {
+  font-size: 24px;
+  line-height: 36px;
+  margin: 24px 0 50px;
+}
+.btn-branding {
+  border: 1px solid var(--branding-color);
+  color: white;
+  font-size: 18;
+  padding: 18px 46px;
+  background-color: var(--branding-color);
+  border-radius: 4px;
+  text-decoration: none;
+  transition: all 200ms ease-in-out;
+}
+.btn-branding:hover {
+  color: var(--branding-color);
+  background-color: var(--secondary-color);
+}
+section h3 {
+  font-family: var(--default-font-family);
+  font-size: 18px;
+  font-weight: normal;
+  text-align: center;
+  color: var(--text-color);
+}
+section h2 {
+  font-size: 64px;
+}
+section p {
+  margin: 50px 0;
+  line-height: 30px;
+  color: var(--text-color);
+}
+.btn-branding-outline {
+  color: var(--branding-color);
+  border: 1px solid var(--branding-color);
+  border-radius: 4px;
+  text-decoration: none;
+  padding: 18px 25px;
+  transition: all 200ms ease-in-out;
+}
+.btn-branding-outline:hover {
+  background-color: var(--branding-color);
+  color: white;
+}
+.project-description {
+  margin: 5vw 30px;
+}
+.row {
+  margin: 70px 0;
+}
+.content-container {
+  margin-top: 160px;
+  margin-bottom: 205px;
+}
+.content-container h1 {
+  font-size: 64px;
+  margin-top: 3vw;
+}
+.content-container h2 {
+  font-size: 24px;
+  margin: 15px 0 10px;
+  text-align: center;
+  line-height: 1;
+}
+.content-container h3 {
+  font-weight: bold;
+  text-align: start;
+  margin: 30px 0;
+}
+.content-container p {
+  font-size: 14px;
+  opacity: 0.7;
+  margin: 0;
+  text-align: center;
+}
+section .about-paragraph {
+  font-size: 16px;
+  text-align: start;
+  line-height: 30px;
+  margin: 30px 0 50px;
+}
+.content-container img {
+  border-radius: 20px;
+}
+.content {
+  margin: 20px 10px;
+}
+
+.about-work-inquiry h2 {
+  font-size: 48px;
+}
+.about-work-inquiry p {
+  margin: 18px 0 0;
+  color: var(--text-color);
+  opacity: 0.7;
+}
+footer {
+  margin: 120px 0;
+}
+footer .contact-box {
+  background-color: var(--secondary-color);
+  border-radius: 20px;
+  padding: ;
+}
+footer .social-links a {
+  font-size: 18px;
+  color: var(--branding-color);
+  background-color: var(--secondary-color);
+  padding: 10px 16px;
+  border-radius: 50%;
+  margin: 20px;
+  transition: all 200ms ease-in-out;
+}
+footer .social-links a:hover {
+  background-color: var(--branding-color);
+  color: white;
+}
+@media (max-width: 860px) {
+  header h1 {
+    font-size: 56px;
+    line-height: 128px;
+  }
+  section h2 {
+    font-size: 42px;
+  }
+}
