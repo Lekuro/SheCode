@@ -83,6 +83,43 @@ section p {
 .row {
   margin: 70px 0;
 }
+.about-section {
+  margin-top: 160px;
+  margin-bottom: 205px;
+}
+.about-section h1 {
+  font-size: 64px;
+  margin-top: 3vw;
+}
+.about-section h3 {
+  font-weight: bold;
+  text-align: start;
+  margin: 30px 0;
+}
+.about-section p {
+  opacity: 0.7;
+}
+.about-section img {
+  border-radius: 10px;
+}
+.about-section-content {
+  padding-right: 60px;
+  margin-bottom: 60px;
+}
+.about-work-inquiry {
+  background-color: var(--secondary-color);
+  border-radius: 20px;
+  padding: 1px 120px;
+}
+.about-work-inquiry h2 {
+  font-size: 48px;
+}
+.about-work-inquiry p {
+  margin: 18px 0 0;
+  color: var(--text-color);
+  opacity: 0.7;
+}
+
 @media (max-width: 860px) {
   header h1 {
     font-size: 56px;
