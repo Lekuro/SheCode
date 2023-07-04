@@ -13,9 +13,13 @@ body {
   font-size: 16px;
 }
 h1,
-h2 {
+h2,
+h4 {
   font-family: var(--header-font-family);
   font-weight: bold;
+}
+h4 {
+  font-size: 48px;
 }
 nav {
   padding: 20px 10px;
@@ -165,12 +169,28 @@ section .about-paragraph {
   opacity: 0.7;
 }
 footer {
-  margin: 120px 0;
+  margin: 120px 0 60px;
 }
 footer .contact-box {
   background-color: var(--secondary-color);
   border-radius: 20px;
-  padding: ;
+  padding: 50px 120px;
+}
+footer .contact-box p {
+  margin: 0;
+  font-size: 18px;
+  color: var(--text-color);
+}
+footer .email-link {
+  margin: 80px 0 40px;
+}
+footer .email-link a {
+  text-decoration: none;
+  color: black;
+  font-size: 24px;
+}
+footer .email-link a:hover {
+  color: var(--branding-color);
 }
 footer .social-links a {
   font-size: 18px;
@@ -178,7 +198,7 @@ footer .social-links a {
   background-color: var(--secondary-color);
   padding: 10px 16px;
   border-radius: 50%;
-  margin: 20px;
+  margin: 0 20px;
   transition: all 200ms ease-in-out;
 }
 footer .social-links a:hover {
@@ -204,7 +224,10 @@ footer .social-links a:hover {
   .project-description {
     margin: auto 0;
   }
-  /* .container nav {
-    text-align: start;
-  } */
+  footer h4 {
+    font-size: 28px;
+  }
+  footer .contact-box {
+    padding: 20px 30px;
+  }
 }
