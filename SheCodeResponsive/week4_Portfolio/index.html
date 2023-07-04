@@ -24,43 +24,63 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light container">
-      <a class="navbar-brand" href="#">Navbar</a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarNav"
-        aria-controls="navbarNav"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item active">
-            <a class="nav-link" href="index.html"
-              >Home <span class="sr-only">(current)</span></a
-            >
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="about.html">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="work.html">Work</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="contact.html">Contact</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
+    <div class="container">
+      <nav class="navbar navbar-expand-lg bg-body-white">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="images/logo.png" class="logo" alt="SheCode logo" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="work.html">Work</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <!-- <nav class="container d-flex justify-content-between">
+      <img src="images/logo.png" class="d-none d-md-block" alt="SheCode logo" />
+      <img
+        src="images/logo-small.jpg"
+        class="d-block d-md-none"
+        alt="SheCode logo"
+      />
+      <ul>
+        <li><a class="active-link" href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="work.html">Work</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav> -->
     <header>
       <h2>Hi I am</h2>
       <h1>Patricia Pereira</h1>
       <h3>Front-end developer based in Portugal</h3>
-      <a href="work.html" class="btn-branding">Contact me</a>
+      <a href="contact.html" class="btn-branding">Contact me</a>
     </header>
     <section class="container">
       <h3>Featured Project which my best projects be choice to show</h3>
@@ -100,23 +120,23 @@
         </div>
         <div class="col d-none d-lg-block">
           <img
-            src="images/yogurt.png"
+            src="images/weather.png"
             class="img-fluid"
-            alt="Yogurt project photo"
+            alt="Weather project photo"
           />
         </div>
       </div>
       <div class="row">
         <div class="col d-none d-lg-block">
           <img
-            src="images/yogurt.png"
+            src="images/dictionary.png"
             class="img-fluid"
-            alt="Yogurt project photo"
+            alt="Dictionary project photo"
           />
         </div>
         <div class="col">
           <div class="project-description">
-            <h2>Yogurt Project</h2>
+            <h2>Dictionary App</h2>
             <p>
               Far far away, behind the word mountains, far from the countries
               Vokalia and Consonantia, there live the blind texts. Separated
@@ -134,26 +154,27 @@
           <h2>Work Inquiry</h2>
           <p>Let’s work together and i’ll help you by all my best</p>
         </div>
-        <div >
+        <div>
           <a href="#" class="btn-branding">Let's talk here</a>
         </div>
       </div>
-      <div class="email-link  d-flex justify-content-center">
+      <div class="email-link d-flex justify-content-center">
         <a href="mailto:kurotchyn.lesya@gmail.com">Write me!</a>
       </div>
       <div class="social-links d-flex justify-content-center">
-        <a href="https://github.com/Lekuro"><i class="fab fa-github"></i><a
-        href="https://www.linkedin.com/in/lesya-kurotchyn-27a541192/"
-        target="_blank"
-      >
-        <i class="fab fa-linkedin-in"></i>
-      </a>
-      <a
-        href="https://www.facebook.com/profile.php?id=100007175225535"
-        target="_blank"
-      >
-        <i class="fab fa-facebook"></i>
-      </a>
+        <a href="https://github.com/Lekuro"><i class="fab fa-github"></i></a>
+        <a
+          href="https://www.linkedin.com/in/lesya-kurotchyn-27a541192/"
+          target="_blank"
+        >
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+        <a
+          href="https://www.facebook.com/profile.php?id=100007175225535"
+          target="_blank"
+        >
+          <i class="fab fa-facebook"></i>
+        </a>
       </div>
     </footer>
   </body>
