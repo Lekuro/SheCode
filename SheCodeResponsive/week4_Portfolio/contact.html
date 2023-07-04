@@ -24,7 +24,43 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <nav class="container d-flex justify-content-between">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg bg-body-white">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="images/logo.png" class="logo" alt="SheCode logo" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="work.html">Work</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="contact.html">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <!-- <nav class="container d-flex justify-content-between">
       <img src="images/logo.png" class="d-none d-md-block" alt="SheCode logo" />
       <img
         src="images/logo-small.jpg"
@@ -37,7 +73,7 @@
         <li><a href="work.html">Work</a></li>
         <li><a class="active-link" href="contact.html">Contact</a></li>
       </ul>
-    </nav>
+    </nav> -->
     <section class="content-container container">
       <h1>Let's get in touch!</h1>
       <div class="content"></div>
